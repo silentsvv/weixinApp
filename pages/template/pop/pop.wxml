@@ -1,0 +1,34 @@
+<template name="pop">
+  <form bindsubmit="formSubmit">
+    <view class="pop animated bounceInLeft">
+      <view class="pop-title">
+        <text>添加任务</text>
+      </view>
+      <view class="pop-form">
+        <view class="form-task line">
+          <text>任务</text>
+          <input type="text" name="taskName" placeholder="请输入填写任务" bindchange="name"/>
+        </view>
+        <view class="form-time line">
+          <text>时间</text>
+          <picker mode="time" name="taskTime" value="{{target}}" start="{{now}}" end="24:00" bindchange="bindTimeChange">
+            <view class="picker">
+              {{target}}
+            </view>
+          </picker>
+        </view>
+        <view class="form-type line">
+          <text>紧急</text>
+            <switch name="taskLevel"/>
+        </view>
+        <view class="form-btn">
+          <button class="done" form-type="submit">确定</button>
+          <button class="fail" bindtap="cancel">取消</button>
+        </view>
+        <view class="task-info">
+          <text>注:默认时间为一小时</text>
+        </view>
+      </view>
+    </view>
+  </form>
+</template>

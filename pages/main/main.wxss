@@ -1,0 +1,58 @@
+@import "../template/task/task.wxss";
+@import "../template/pop/pop.wxss";
+
+/*页面设置*/
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  padding-top: 1px;
+}
+
+/*添加按钮*/
+.main .add-task {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40rpx;
+  width: 100%;
+}
+
+.main .add-task button {
+  width: 350rpx;
+  color: #fff;
+  background-color: #169BD5;
+}
+
+/*底部导航条*/
+.main .footer {
+  position:fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+  font-size: 16px;
+  background: #fff;
+  box-shadow: -1px 1px 6px #ccc;
+  z-index: 1;
+}
+
+.main .footer .footer-left,
+.main .footer .footer-right {
+  text-align: center;
+  line-height: 120rpx;
+  width: 50%;
+}
+
+.main .footer .footer-left {
+  border-right: 1px solid #f2f2f2;
+}
+
+.footer-block {
+  height: 140rpx;
+}
+
+
+
+

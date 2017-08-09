@@ -1,0 +1,91 @@
+/*弹窗*/
+.pop-wrap {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.pop-wrap .pop {
+  width: 680rpx;
+  height: 800rpx;
+  margin: -100rpx auto 0 auto;
+  border-radius: 20rpx;
+  background: #fff;
+}
+
+.pop-wrap .pop .pop-title{
+  display: block;
+  text-align: center;
+  background: #6CA8E3;
+  padding: 20rpx 0;
+  border-radius: 20rpx 20rpx 0 0;
+  color: #fff;
+}
+
+.pop-wrap .pop .pop-form .form-task,
+.pop-wrap .pop .pop-form .form-time,
+.pop-wrap .pop .pop-form .form-type {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 140rpx;
+}
+
+.pop-wrap .pop .pop-form .form-task text,
+.pop-wrap .pop .pop-form .form-time text,
+.pop-wrap .pop .pop-form .form-type text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+}
+
+.pop-wrap .pop .pop-form .form-time picker,
+.pop-wrap .pop .pop-form .form-type switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+}
+
+.pop-wrap .pop .pop-form .form-task input {
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  margin-right: 10%;
+  padding-left: 20rpx;
+  height: 68rpx;
+}
+
+.pop-wrap .pop .pop-form .form-btn {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.pop-wrap .pop .pop-form .form-btn button {
+  margin-top: 20rpx;
+  color: #fff;
+  width: 240rpx;
+  height: 80rpx;
+  font-size: 16px;
+  line-height: 80rpx;
+}
+
+.pop-wrap .pop .pop-form .task-info {
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #666;
+}

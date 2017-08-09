@@ -1,0 +1,45 @@
+/*任务列表样式*/
+.task-list .task {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 640rpx;
+  height: 300rpx;
+  margin: 20rpx auto 0 auto;
+  padding: 40rpx;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  box-shadow: 1px 3px 6px #ccc;
+  background: #fff;
+}
+
+.task-list .task .task-left,
+.task-list .task .task-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.task-list .task .task-left .task-detail,
+.task-list .task .task-left .task-time {
+  margin: 20rpx 0;
+}
+
+.task-list .task .task-right {
+   align-items: flex-end;
+}
+
+.task-level {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 40rpx;
+}
+
+.task-list .task .task-right .task-btn button{
+  display: block;
+  margin-top: 10rpx;
+  width: 150rpx;
+  color: #fff;
+}

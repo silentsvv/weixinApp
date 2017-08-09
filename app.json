@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/done/done",
+    "pages/fail/fail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#6CA8E3"
+  }
+}

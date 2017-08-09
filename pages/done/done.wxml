@@ -1,0 +1,11 @@
+<import src="../template/task/task"/>
+<view class="main">
+  <view class="task-list">
+    <view class="task" wx:for="{{doneList}}">
+      <template is="task" data="{{item}}"></template>
+    </view>
+  </view>
+  <view class="is-empty" wx:if="{{!doneList.length}}">
+    <text>任务为空</text>
+  </view>
+</view>

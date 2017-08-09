@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: #6CA8E3;
+}
+
+.user-avatar {
+  margin-top: 200rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.user-content {
+  margin-top: 200rpx;
+}
+
+.user-content text {
+  font-size: 22px;
+  color: #fff;
+}
+
+.user-btn {
+  margin-top: 300rpx;
+  width: 150px;
+}
+
+.user-btn button {
+  background-color: #FAFB8D;
+  color: #333;
+}
