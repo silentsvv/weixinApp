@@ -6,20 +6,33 @@
       </view>
       <view class="pop-form">
         <view class="form-task line">
-          <text>任务</text>
-          <input type="text" name="taskName" placeholder="请输入填写任务" bindchange="name"/>
+          <view class="form-left">
+            <text style="color:#333">任务</text>
+          </view>
+          <view class="form-right">
+            <input type="text" name="taskName" placeholder="请输入填写任务" bindchange="name"/>
+          </view>
         </view>
         <view class="form-time line">
-          <text>时间</text>
-          <picker mode="time" name="taskTime" value="{{target}}" start="{{now}}" end="24:00" bindchange="bindTimeChange">
-            <view class="picker">
-              {{target}}
-            </view>
-          </picker>
+          <view class="form-left">
+            <text style="color:#333">时间</text>
+          </view>
+          <view class="form-right">
+            <picker mode="time" name="taskTime" value="{{target}}" start="{{now}}" end="24:00" bindchange="bindTimeChange">
+              <view class="picker">
+                {{target}}
+                <text style="color:#999;font-size: 14px;">(点击设置时间)</text>
+              </view>
+            </picker>
+          </view>
         </view>
         <view class="form-type line">
-          <text>紧急</text>
+          <view class="form-left">
+            <text style="color:#333">紧急</text>
+          </view>
+          <view class="form-right">
             <switch name="taskLevel"/>
+          </view>
         </view>
         <view class="form-btn">
           <button class="done" form-type="submit">确定</button>

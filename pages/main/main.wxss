@@ -9,6 +9,23 @@
   padding-top: 1px;
 }
 
+/* container */
+.main .is-empty {
+  margin-top: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main .is-empty image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
 /*添加按钮*/
 .main .add-task {
   display: flex;
@@ -19,9 +36,10 @@
 }
 
 .main .add-task button {
-  width: 350rpx;
-  color: #fff;
-  background-color: #169BD5;
+  width: 240rpx;
+  color: #6dc9f9;
+  background-color: #fff;
+  border: 1px solid #6dc9f9
 }
 
 /*底部导航条*/

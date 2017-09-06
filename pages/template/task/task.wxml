@@ -1,24 +1,25 @@
 <template name="task">
   <view class="task-left">
     <view class="task-detail">
-      <text>任务</text>
+      <text style="color:#666;font-size: 14px">任务</text>
       <view>
-        <text class="blod">{{item.task}}</text>
+        <text class="" style="font-size: 18px">{{item.task}}</text>
       </view>
     </view>
+    <view class="task-line"></view>
     <view class="task-time">
-      <text>时间</text>
+      <text style="color:#666;font-size: 14px">时间</text>
       <view>
-        <text class="blod">{{item.time}}</text>
+        <text class="" style="font-size: 18px">{{item.time}}</text>
       </view>
     </view>
   </view>
   <view class="task-right">
-    <view class="task-level">{{item.time>now?item.isUgrent?"紧急":
+    <view class="task-level">{{item.timeNoSign>nowNoSign?item.isUgrent?"紧急":
     "正常":"已失败"}}</view>
     <view class="task-btn">
       <block wx:if="{{item.type == undefined}}">
-        <button size="mini" class="done" bindtap="finish" data-id="{{item.id}}" disabled="{{item.time>now ?false:true}}">完成</button>
+        <button size="mini" class="done" bindtap="finish" data-id="{{item.id}}" disabled="{{item.timeNoSign>nowNoSign ?false:true}}">完成</button>
         <button size="mini" class="fail" bindtap="unfinished" data-id="{{item.id}}">失败</button>
       </block>
       <block wx:elif="{{item.type == 'unfinished'}}">

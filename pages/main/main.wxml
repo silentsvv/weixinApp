@@ -1,23 +1,23 @@
 <import src="../template/task/task"/>
 <import src="../template/pop/pop"/>
 <view class="main">
-  <view class="task-list">
-    <view class="task" wx:for="{{taskData}}">
-      <template is="task" data="{{item,now}}"></template>
+  <view class="container">
+    <view class="task-list">
+      <view class="task" wx:for="{{taskData}}">
+        <template is="task" data="{{item,now,nowNoSign}}"></template>
+      </view>
     </view>
-  </view>
-  <view class="is-empty" wx:if="{{!taskData.length}}">
-    <text>任务为空</text>
-  </view>
-  <view class="add-task">
-    <button bindtap="showPop">点击添加</button>
+    <view class="is-empty" wx:if="{{!taskData.length}}">
+      <image src="../../images/exclamation.png"></image>
+      <text>任务列表为空</text>
+      <text>请添加任务</text>
+    </view>
+    <view class="add-task">
+      <button size="default" bindtap="showPop">点击添加</button>
+    </view>
   </view>
   <view class="pop-wrap" wx:if="{{isShow}}">
     <template is="pop" data="{{target,now}}"></template>
   </view>
   <view class="footer-block"></view>
-  <view class="footer">
-    <view class="footer-left" bindtap="switchDone">已完成</view>
-    <view class="footer-right" bindtap="switchFail">未完成</view>
-  </view>
 </view>

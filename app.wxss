@@ -4,6 +4,7 @@ page {
   width: 100%;
   height: 100%;
   font-family: '微软雅黑','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f7f7f7;
 }
 
 /*页面通用样式*/
@@ -15,22 +16,31 @@ page {
 }
 
 .is-empty {
+  margin-top: 200rpx;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.is-empty image{
+  width: 200rpx;
   height: 200rpx;
-  font-size: 20px;
-  font-weight: 600;
-  color: #222;
 }
 
 .done {
-  background-color: #169BD5;
+  background-color: #fff;
+  color: #6dc9f9;
+  border: 1rpx solid #6dc9f9;
 }
 
 .fail {
-  background-color: #f00;
+  background-color: #fff;
+  color: #f52d40;
+  border: 1rpx solid #f52d40;
 }
 
 

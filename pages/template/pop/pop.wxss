@@ -23,10 +23,10 @@
 .pop-wrap .pop .pop-title{
   display: block;
   text-align: center;
-  background: #6CA8E3;
-  padding: 20rpx 0;
+  background: #fff;
+  padding: 26rpx 0;
   border-radius: 20rpx 20rpx 0 0;
-  color: #fff;
+  color: #6CA8E3;
 }
 
 .pop-wrap .pop .pop-form .form-task,
@@ -41,21 +41,18 @@
   height: 140rpx;
 }
 
-.pop-wrap .pop .pop-form .form-task text,
-.pop-wrap .pop .pop-form .form-time text,
-.pop-wrap .pop .pop-form .form-type text {
+.pop-wrap .pop .pop-form .form-left{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 30%;
+  flex: 3;
 }
 
-.pop-wrap .pop .pop-form .form-time picker,
-.pop-wrap .pop .pop-form .form-type switch {
+.pop-wrap .pop .pop-form .form-right{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 70%;
+  flex: 7;
 }
 
 .pop-wrap .pop .pop-form .form-task input {
@@ -76,7 +73,6 @@
 
 .pop-wrap .pop .pop-form .form-btn button {
   margin-top: 20rpx;
-  color: #fff;
   width: 240rpx;
   height: 80rpx;
   font-size: 16px;

@@ -8,14 +8,18 @@ Page({
 
   //显示弹窗时设置当前时间
   onShow () {
+
     let data = wx.getStorageSync("taskData");
     let date = new Date();
-    let hour = date.getHours();
-    let min = date.getMinutes();
+    let hour = date.getHours() >= 10 ? date.getHours() : "0" + date.getHours();
+    let min = date.getMinutes() >= 10 ? date.getMinutes() : "0" + date.getMinutes();
     let now = hour + ":" + min;
+    let nowNoSign = parseInt(now.replace(":",""));
+    console.log(now)
     this.setData({
       taskData: data,
-      now: now
+      now: now,
+      nowNoSign: nowNoSign
     })
   },
   
@@ -141,6 +145,7 @@ Page({
     let sec = date.getSeconds();
     let random = Math.floor(Math.random() * 10000);
     let id ="0" + year + month + day + hour + min + sec + random;
+    let timeNoSign = parseInt(time.replace(":",""))
     if(!name) {
       wx.showToast({
         title: '请填写任务',
@@ -153,6 +158,7 @@ Page({
       id: id,
       task: name,
       time: time,
+      timeNoSign: timeNoSign,
       isUgrent: level
     })
     this.setData({

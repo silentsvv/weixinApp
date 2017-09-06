@@ -4,14 +4,13 @@
   flex-direction: row;
   justify-content: center;
   width: 640rpx;
-  height: 300rpx;
+  height: 240rpx;
   margin: 20rpx auto 0 auto;
   padding: 40rpx;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 20rpx;
-  box-shadow: 1px 3px 6px #ccc;
+  border-radius: 5rpx;
   background: #fff;
+  box-shadow: 1px 1px 6px #eee;
 }
 
 .task-list .task .task-left,
@@ -27,13 +26,25 @@
   margin: 20rpx 0;
 }
 
+.task-list .task .task-left {
+  flex: 5;
+}
 .task-list .task .task-right {
+   flex: 2; 
    align-items: flex-end;
+   border-left-width: 1px;
+   border-left-style: dashed;
+}
+
+.task-list .task .task-left .task-line {
+  margin-right: 20rpx;
+  border-bottom-color: #eee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 .task-level {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 24px;
   margin-bottom: 40rpx;
 }
 
@@ -41,5 +52,4 @@
   display: block;
   margin-top: 10rpx;
   width: 150rpx;
-  color: #fff;
 }

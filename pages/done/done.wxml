@@ -6,6 +6,7 @@
     </view>
   </view>
   <view class="is-empty" wx:if="{{!doneList.length}}">
-    <text>任务为空</text>
+    <image src="../../images/exclamation.png"></image>
+    <text>任务列表为空</text>
   </view>
 </view>

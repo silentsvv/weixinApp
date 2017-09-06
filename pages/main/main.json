@@ -1,3 +1,18 @@
 {
-  
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/done/done",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/fail/fail",
+        "text": "接口"
+      }
+    ]
+  }
 }

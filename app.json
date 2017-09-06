@@ -1,11 +1,32 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/main/main",
-    "pages/done/done",
-    "pages/fail/fail"
+    "pages/manage/manage",
+    "pages/fail/fail",
+    "pages/done/done"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#6CA8E3"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#39a7e1",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add_HL.png",
+        "text": "任务"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "iconPath": "images/check.png",
+        "selectedIconPath": "images/check_HL.png",
+        "text": "查看"
+      }
+    ]
   }
 }
